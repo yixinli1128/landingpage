@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 00 Navigation-->
+    <header class="site-header">
+      <input type="checkbox" id="menu-toggle" />
+
+      <div class="nav-wrap">
+        <a class="brand" href="#hero">✦ STARRYMATE</a>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="#post">PARTNER CARD</a>
+          <a href="#match">MATCH FASTER</a>
+          <a href="#chat">SAFE CHAT</a>
+          <a href="#support">EVENT SUPPORT</a>
+          <a href="#archive">MEMORY</a>
+        </nav>
+        <a class="nav-prototype" href="#final">體驗 Prototype</a>
+        <!-- Mobile icon/more -->
+        <label class="menu-button" for="menu-toggle" aria-label="開啟選單">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+      <!-- Mobile Nav / Glass-->
+      <nav class="mobile-menu">
+        <a href="#post">PARTNER CARD</a>
+        <a href="#match">MATCH FASTER</a>
+        <a href="#chat">SAFE CHAT</a>
+        <a href="#support">EVENT SUPPORT</a>
+        <a href="#archive">MEMORY</a>
+      </nav>
+    </header>
+
+    <main>
+      <!--01 Hero-->
+      <section class="section hero" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">STARRYMATE / FIND YOUR MATE</p>
+          <h1>
+            這一場，快速找到<br />
+            適合一起出發的搭子
+          </h1>
+          <p class="body-text">
+            從同藝人、同場次開始，先看演出與旅行日期，再比較出發地、住宿預算、招募條件與追星屬性。
+            少一點海撈與反覆私訊，把時間留給真正可能一起出發的人。
+          </p>
+          <div class="hero-action">
+            <h3>讓每一場奔赴，都有同頻相伴</h3>
+            <a class="main-button" href="#final">體驗 Prototype</a>
+          </div>
+        </div>
+
+        <div class="hero-phones">
+          <div class="phone phone-hero-main">
+            <img src="images/hero-01.png" alt="StarryMate Hero 主畫面" />
+          </div>
+          <div class="phone phone-hero-second">
+            <img src="images/hero-02.png" alt="StarryMate Hero 次畫面" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 結構化發搭子卡-->
+      <section class="section post-section" id="post">
+        <div class="section-heading center">
+          <p class="eyebrow">01 / STRUCTURED PARTNER CARD</p>
+          <h2>把找搭子，變成一條清楚的發卡流程</h2>
+          <p class="body-text">
+            從場次、同行條件到追星偏好，三個步驟填完後先預覽，再正式發布招募。
+          </p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <p class="step-title">01　基本場次</p>
+            <div class="phone">
+              <img src="images/step-01.png" alt="基本場次" />
+            </div>
+            <p class="caption">選定藝人、城市與日期</p>
+          </div>
+
+          <div class="step">
+            <p class="step-title">02　同行條件</p>
+            <div class="phone">
+              <img src="images/step-02.png" alt="同行條件" />
+            </div>
+            <p class="caption">設定人數、住宿與旅行需求</p>
+          </div>
+
+          <div class="step">
+            <p class="step-title">03　追星偏好</p>
+            <div class="phone">
+              <img src="images/step-03.png" alt="追星偏好" />
+            </div>
+            <p class="caption">補上飯圈與避雷屬性</p>
+          </div>
+
+          <div class="step">
+            <p class="step-title">04　預覽發布</p>
+            <div class="phone">
+              <img src="images/step-04.png" alt="預覽發布" />
+            </div>
+            <p class="caption">確認完整內容後再發布</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 星搭匹配-->
+      <section class="section match-section" id="match">
+        <div class="match-copy">
+          <div class="section-heading">
+            <p class="eyebrow">02 / MATCH FASTER</p>
+            <h2>
+              一張 Partner Card，<br />
+              先看懂誰真的比較適合
+            </h2>
+            <p class="body-text">
+              瀏覽招募時，不用再把同樣的問題重問一次。
+              出發地、住宿預算、招募條件、追星屬性與信任資訊都在同一個畫面先比較。
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <div class="glass-card">
+              <h3>同場先對上</h3>
+              <p>城市、日期與旅行時間</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>習慣先看</h3>
+              <p>飯圈屬性與避雷資訊</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>條件先比較</h3>
+              <p>預算、招募與同行需求</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>再決定行動</h3>
+              <p>收藏或表達同行意願</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-phone">
+          <div class="phone phone-match">
+            <img src="images/match-card.png" alt="Partner Card" />
+          </div>
+        </div>
+      </section>
+
+      <!--04-->
+      <section class="section chat-section" id="chat">
+        <div class="chat-copy">
+          <div class="section-heading">
+            <p class="eyebrow">03 / INTENT → SAFE CHAT</p>
+            <h2>
+              先確認彼此意願<br />
+              配對成功後，再安心溝通
+            </h2>
+            <p class="body-text">
+              用意願卡表達想同行的意願；雙方接受後，再進入星安溝通室確認重要同行細節。
+            </p>
+          </div>
+
+          <div class="three-cards">
+            <div class="glass-card">
+              <h3>意願卡</h3>
+              <p>先表達想同行</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>配對成功</h3>
+              <p>雙方接受後建立配對</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>星安溝通</h3>
+              <p>再把同行細節聊清楚</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-phones">
+          <div class="phone phone-chat-main">
+            <img src="images/intent-card.png" alt="意願卡" />
+          </div>
+          <div class="phone phone-chat-second">
+            <img src="images/safe-chat.png" alt="星安溝通室" />
+          </div>
+        </div>
+      </section>
+
+      <!--05-->
+      <section class="section support-section" id="support">
+        <div class="support-copy">
+          <div class="section-heading">
+            <p class="eyebrow">04 / SAME EVENT SUPPORT</p>
+            <h2>
+              不只找同行，<br />
+              也讓同場的人彼此連上
+            </h2>
+            <p class="body-text">
+              星援互助廳整合同場群與互助牆：同場群交流演唱會資訊與經驗，互助牆提供無償搶票互助。
+            </p>
+          </div>
+
+          <div class="two-cards">
+            <div class="glass-card">
+              <h3>同場群</h3>
+              <p>場館、路線、應援、資訊</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>互助牆</h3>
+              <p>無償搶票互助</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-phones">
+          <div class="phone">
+            <img src="images/same-event-group.png" alt="同場群" />
+          </div>
+          <div class="phone">
+            <img src="images/support-wall.png" alt="互助牆" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 星跡檔案館-->
+
+      <section class="section archive-section" id="archive">
+        <div class="archive-copy">
+          <div class="section-heading">
+            <p class="eyebrow">05 / KEEP THE MEMORY</p>
+            <h2>
+              這一場結束了，<br />
+              奔赴過的地方還會留下來
+            </h2>
+            <p class="body-text">
+              把票根、照片、心得與觀演足跡收進星跡檔案館，讓一次次追星不只停在手機相簿裡，
+              而是成為可以回看的個人旅程。
+            </p>
+          </div>
+
+          <div class="archive-cards">
+            <div class="glass-card">
+              <h3>觀演足跡</h3>
+              <p>回看去過的場次與城市</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>票根與照片</h3>
+              <p>把散落內容集中留下</p>
+            </div>
+
+            <div class="glass-card">
+              <h3>旅程記憶</h3>
+              <p>讓每一次奔赴都有完整收尾</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="archive-phones">
+          <div class="phone phone-archive-main">
+            <img src="images/archive-record.png" alt="星跡紀錄" />
+          </div>
+          <div class="phone phone-archive-second">
+            <img src="images/archive-map.png" alt="星跡地圖" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 Final -->
+      <section class="section final-section" id="final">
+        <div class="final-copy">
+          <p class="eyebrow">STARRYMATE</p>
+          <h2>
+            下一場，不用再一個人<br />
+            慢慢找搭子
+          </h2>
+          <p class="body-text">
+            從場次開始，先找到同場的人，再找到真正適合一起出發的人。
+          </p>
+        </div>
+
+        <div class="final-phone">
+          <div class="phone">
+            <img src="images/final-cta.png" alt="StarryMate Partner Card" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 08 Footer-->
+    <footer class="footer">
+      <div>
+        <h3>StarryMate</h3>
+        <p>讓每一場奔赴，都有同頻相伴</p>
+      </div>
+      <p>UX / UI Design Project</p>
+    </footer>
+  </body>
+</html>
