@@ -180,7 +180,7 @@ h3 {
 }
 
 
-/* Hero*/
+/*00Hero*/
 .hero {
   display: flex;
   flex-direction: column;
@@ -221,17 +221,15 @@ h3 {
 
 .phone-hero-main {
   width: 54%;
-  transform: rotate(3deg);
 }
 
 .phone-hero-second {
   width: 46%;
   margin-left: -4%;
-  transform: rotate(-4deg) scale(0.88);
 }
 
 
-/* 結構化發搭子卡*/
+/*01結構化發搭子卡*/
 .post-section {
   display: flex;
   flex-direction: column;
@@ -275,7 +273,7 @@ h3 {
 }
 
 
-/* 星搭匹配  */
+/* 02星搭匹配  */
 .match-section {
   display: flex;
   flex-direction: column;
@@ -303,12 +301,8 @@ h3 {
   width: 267px;
 }
 
-.phone-match {
-  transform: rotate(-3deg);
-}
 
-
-/* 意願卡 */
+/*03意願卡 */
 .chat-section {
   display: flex;
   flex-direction: column;
@@ -355,17 +349,16 @@ h3 {
 
 .phone-chat-main {
   width: 61%;
-  transform: rotate(-3deg);
 }
 
 .phone-chat-second {
   width: 47%;
   margin-left: -8%;
-  transform: rotate(6deg);
+ 
 }
 
 
-/*  星援互助廳  */
+/*04互助*/
 .support-section {
   display: flex;
   flex-direction: column;
@@ -398,7 +391,7 @@ h3 {
 }
 
 
-/* 星跡檔案館 */
+/*05星跡*/
 .archive-section {
   display: flex;
   flex-direction: column;
@@ -439,18 +432,16 @@ h3 {
 
 .phone-archive-main {
   width: 54%;
-  transform: rotate(4deg);
+
 }
 
 .phone-archive-second {
   width: 46%;
   margin-left: -4%;
-  transform: rotate(-5deg) scale(0.88);
 }
 
 
 /* Final  */
-
 .final-section {
   display: flex;
   flex-direction: column;
@@ -468,9 +459,6 @@ h3 {
   width: 267px;
 }
 
-.final-phone .phone {
-  transform: rotate(-3deg);
-}
 
 
 /* Footer */
@@ -592,7 +580,7 @@ h3 {
   }
 
 
-  /* 01 Hero */
+  /* 00Hero */
   .hero {
     min-height: 1038px;
     padding-top: 80px;
@@ -629,7 +617,7 @@ h3 {
   }
 
 
-  /*02 結構化發卡 */
+  /*01結構化發卡 */
 
   .post-section {
     gap: 60px;
@@ -664,7 +652,7 @@ h3 {
   }
 
 
-  /* 03 星搭匹配  */
+  /*02星搭匹配*/
 
   .match-section {
     min-height: 938px;
@@ -694,7 +682,7 @@ h3 {
   }
 
 
-  /* 04 意願卡 */
+  /* 03意願卡 */
 
   .chat-section {
     min-height: 969px;
@@ -736,7 +724,7 @@ h3 {
   }
 
 
-  /*  05 星援互助廳  */
+  /* 04互助 */
 
   .support-section {
     min-height: 840px;
@@ -768,7 +756,7 @@ h3 {
   }
 
 
-  /* 06 星跡檔案館  */
+  /* 05星跡 */
 
   .archive-section {
     min-height: 773px;
@@ -804,7 +792,7 @@ h3 {
   }
 
 
-  /* 07 Final  */
+  /* Final  */
 
   .final-section {
     min-height: 667px;
@@ -824,7 +812,7 @@ h3 {
   }
 
 
-  /* 08 Footer */
+  /* Footer */
   .footer {
     padding: 20px 12.5%;
   }
