@@ -105,7 +105,6 @@ h3 {
 .phone img {
   width: 100%;
   height: auto;
-
   display: block;
 }
 
@@ -182,7 +181,6 @@ h3 {
 
 
 /* Hero*/
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -234,7 +232,6 @@ h3 {
 
 
 /* 結構化發搭子卡*/
-
 .post-section {
   display: flex;
   flex-direction: column;
@@ -279,7 +276,6 @@ h3 {
 
 
 /* 星搭匹配  */
-
 .match-section {
   display: flex;
   flex-direction: column;
@@ -313,7 +309,6 @@ h3 {
 
 
 /* 意願卡 */
-
 .chat-section {
   display: flex;
   flex-direction: column;
@@ -371,7 +366,6 @@ h3 {
 
 
 /*  星援互助廳  */
-
 .support-section {
   display: flex;
   flex-direction: column;
@@ -405,7 +399,6 @@ h3 {
 
 
 /* 星跡檔案館 */
-
 .archive-section {
   display: flex;
   flex-direction: column;
@@ -481,7 +474,6 @@ h3 {
 
 
 /* Footer */
-
 .footer {
   width: 100%;
   padding: 12px 24px;
@@ -509,11 +501,9 @@ h3 {
 
 
 /* Desktop769px 以上*/
-
 @media (min-width: 769px) {
 
   /* Desktop 共用*/
-
   .section {
     width: 100%;
     max-width: 1440px;
@@ -557,7 +547,6 @@ h3 {
 
 
   /* 00 Navigation  */
-
   .site-header {
     padding: 12px 48px;
   }
@@ -604,7 +593,6 @@ h3 {
 
 
   /* 01 Hero */
-
   .hero {
     min-height: 1038px;
     padding-top: 80px;
@@ -837,7 +825,6 @@ h3 {
 
 
   /* 08 Footer */
-
   .footer {
     padding: 20px 12.5%;
   }
