@@ -582,7 +582,6 @@ h3 {
 
   /* 00Hero */
   .hero {
-    min-height: 1038px;
     padding-top: 80px;
     padding-bottom: 80px;
     flex-direction: row;
@@ -618,7 +617,6 @@ h3 {
 
 
   /*01結構化發卡 */
-
   .post-section {
     gap: 60px;
   }
@@ -653,9 +651,7 @@ h3 {
 
 
   /*02星搭匹配*/
-
   .match-section {
-    min-height: 938px;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
@@ -683,9 +679,7 @@ h3 {
 
 
   /* 03意願卡 */
-
   .chat-section {
-    min-height: 969px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -723,11 +717,8 @@ h3 {
     margin: 0;
   }
 
-
   /* 04互助 */
-
   .support-section {
-    min-height: 840px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -752,14 +743,12 @@ h3 {
     width: 720px;
     grid-template-columns: repeat(2, 327px);
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
   }
 
 
   /* 05星跡 */
-
   .archive-section {
-    min-height: 773px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -793,9 +782,7 @@ h3 {
 
 
   /* Final  */
-
   .final-section {
-    min-height: 667px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -810,7 +797,6 @@ h3 {
   .final-phone {
     width: 421px;
   }
-
 
   /* Footer */
   .footer {
@@ -830,11 +816,8 @@ h3 {
   }
 }
 
-
-/* =========================
-   769px ~ 1249px
-   02 四支手機放不下時改兩欄
-========================= */
+/* 769px ~ 1249px 02 四支手機放不下時改兩欄
+*/
 
 @media (min-width: 769px) and (max-width: 1249px) {
   .steps {
