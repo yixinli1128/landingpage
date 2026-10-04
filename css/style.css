@@ -1,3 +1,12 @@
+:root {
+  --color-primary: #c9cce7;
+  --color-text-main: #464a7d;
+  --color-text-muted: #766d80;
+  --color-eyebrow: #6c6e9b;
+  --glass-bg: rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --nav-bg: rgba(247, 246, 252, 0.48);
+}
 
 * {
   box-sizing: border-box;
@@ -10,7 +19,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  color: #766d80;
+  color: var(--color-text-muted);
   background-image: radial-gradient(
     circle,
     #b1b7d5,
@@ -31,58 +40,67 @@ body {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
-h1,h2,h3,p {margin: 0;}
+h1, h2, h3, p {
+  margin: 0;
+}
 
-
-/* 文字 */
+/* 共用區塊與標題樣式 */
 .section {
   width: 100%;
   padding: 40px 24px;
   overflow: hidden;
 }
+
 .eyebrow {
   margin-bottom: 16px;
-  color: #6c6e9b;
+  color: var(--color-eyebrow);
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1px;
 }
+
 h1 {
   margin-bottom: 12px;
-  color: #464a7d;
+  color: var(--color-text-main);
   font-size: 32px;
   line-height: 1.3;
 }
+
 h2 {
   margin-bottom: 16px;
-  color: #464a7d;
+  color: var(--color-text-main);
   font-size: 24px;
   line-height: 1.5;
 }
+
 h3 {
-  color: #464a7d;
+  color: var(--color-text-main);
 }
+
 .body-text {
-  color: #766d80;
+  color: var(--color-text-muted);
   font-size: 12px;
   line-height: 2;
 }
+
 .center {
   text-align: center;
 }
 
-
-/*Glass Card*/
-
+/* Glass Card */
 .glass-card {
   padding: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
   border-radius: 22px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(8px);
 }
 
 .glass-card h3 {
@@ -91,29 +109,20 @@ h3 {
 }
 
 .glass-card p {
-  color: #6c6e9b;
+  color: var(--color-eyebrow);
   font-size: 10px;
   line-height: 1.6;
 }
 
-
-/* 手機圖片 */
-.phone {
-  width: 100%;
-}
-
-.phone img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-/*Navigation*/
+/* Navigation */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100%;
   padding: 12px 24px;
-  background-color: #c9cce7;
+  background-color: var(--color-primary);
+  backdrop-filter: blur(10px);
 }
 
 #menu-toggle {
@@ -128,15 +137,15 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
   border-radius: 100px;
-  background-color: rgba(247, 246, 252, 0.48);
+  background-color: var(--nav-bg);
 }
 
 .brand {
-  color: #6c6e9b;
+  color: var(--color-eyebrow);
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .desktop-nav,
@@ -165,13 +174,13 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
   border-radius: 22px;
-  background-color: rgba(247, 246, 252, 0.7);
+  background-color: rgba(247, 246, 252, 0.85);
 }
 
 .mobile-menu a {
-  color: #6c6e9b;
+  color: var(--color-eyebrow);
   font-size: 12px;
 }
 
@@ -179,8 +188,7 @@ h3 {
   display: flex;
 }
 
-
-/*00Hero*/
+/* 00 Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -206,8 +214,13 @@ h3 {
   padding: 12px 30px;
   border-radius: 100px;
   color: white;
-  background-color: #c9cce7;
+  background-color: var(--color-primary);
   font-size: 12px;
+  transition: opacity 0.2s;
+}
+
+.main-button:hover {
+  opacity: 0.9;
 }
 
 .hero-phones {
@@ -228,8 +241,7 @@ h3 {
   margin-left: -4%;
 }
 
-
-/*01結構化發搭子卡*/
+/* 01 結構化發搭子卡 */
 .post-section {
   display: flex;
   flex-direction: column;
@@ -258,7 +270,7 @@ h3 {
 .step-title {
   margin-bottom: 16px;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .step .phone {
@@ -272,8 +284,7 @@ h3 {
   font-size: 10px;
 }
 
-
-/* 02星搭匹配  */
+/* 02 星搭匹配 */
 .match-section {
   display: flex;
   flex-direction: column;
@@ -299,10 +310,10 @@ h3 {
 
 .match-phone {
   width: 267px;
+  margin: 0 auto;
 }
 
-
-/*03意願卡 */
+/* 03 意願卡 */
 .chat-section {
   display: flex;
   flex-direction: column;
@@ -354,11 +365,9 @@ h3 {
 .phone-chat-second {
   width: 47%;
   margin-left: -8%;
- 
 }
 
-
-/*04互助*/
+/* 04 互助 (已修正 RWD) */
 .support-section {
   display: flex;
   flex-direction: column;
@@ -383,15 +392,15 @@ h3 {
 }
 
 .support-phones {
-  width: 432px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 432px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
-
-/*05星跡*/
+/* 05 星跡檔案館 */
 .archive-section {
   display: flex;
   flex-direction: column;
@@ -432,7 +441,6 @@ h3 {
 
 .phone-archive-main {
   width: 54%;
-
 }
 
 .phone-archive-second {
@@ -440,8 +448,7 @@ h3 {
   margin-left: -4%;
 }
 
-
-/* Final  */
+/* Final */
 .final-section {
   display: flex;
   flex-direction: column;
@@ -457,43 +464,40 @@ h3 {
 
 .final-phone {
   width: 267px;
+  margin: 0 auto;
 }
-
-
 
 /* Footer */
 .footer {
   width: 100%;
-  padding: 12px 24px;
+  padding: 24px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 12px;
   align-items: center;
-  background-color: #c9cce7;
+  text-align: center;
+  background-color: var(--color-primary);
 }
 
 .footer h3 {
   margin-bottom: 6px;
-  color: #6c6e9b;
+  color: var(--color-eyebrow);
   font-size: 14px;
 }
 
 .footer p {
-  color: #766d80;
+  color: var(--color-text-muted);
   font-size: 10px;
 }
 
 .footer div p {
-  color: #6c6e9b;
+  color: var(--color-eyebrow);
   font-size: 12px;
 }
 
-
-/* Desktop769px 以上*/
+/* Desktop 769px 以上 */
 @media (min-width: 769px) {
-
-  /* Desktop 共用*/
   .section {
-    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding-left: 48px;
@@ -533,19 +537,13 @@ h3 {
     line-height: 20px;
   }
 
-
-  /* 00 Navigation  */
+  /* 00 Navigation Desktop */
   .site-header {
     padding: 12px 48px;
   }
 
   .nav-wrap {
-    width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .brand {
@@ -566,7 +564,7 @@ h3 {
   }
 
   .desktop-nav a {
-    color: #6c6e9b;
+    color: var(--color-eyebrow);
     font-size: 12px;
   }
 
@@ -575,12 +573,11 @@ h3 {
     padding: 11px 20px;
     border-radius: 100px;
     color: white;
-    background-color: #c9cce7;
+    background-color: var(--color-primary);
     font-size: 12px;
   }
 
-
-  /* 00Hero */
+  /* 00 Hero Desktop */
   .hero {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -607,27 +604,12 @@ h3 {
     margin: 0;
   }
 
-  .phone-hero-main {
-    width: 58%;
-  }
-
-  .phone-hero-second {
-    width: 42%;
-  }
-
-
-  /*01結構化發卡 */
-  .post-section {
-    gap: 60px;
-  }
-
+  /* 01 結構化發卡 Desktop */
   .post-section .section-heading {
     width: 730px;
-    max-width: 100%;
   }
 
   .steps {
-    width: 100%;
     grid-template-columns: repeat(4, 250px);
     justify-content: center;
     gap: 72px;
@@ -649,8 +631,7 @@ h3 {
     font-size: 12px;
   }
 
-
-  /*02星搭匹配*/
+  /* 02 星搭匹配 Desktop */
   .match-section {
     flex-direction: row-reverse;
     justify-content: center;
@@ -664,6 +645,7 @@ h3 {
 
   .match-phone {
     width: 405px;
+    margin: 0;
   }
 
   .match-section .section-heading {
@@ -677,8 +659,7 @@ h3 {
     gap: 24px;
   }
 
-
-  /* 03意願卡 */
+  /* 03 意願卡 Desktop */
   .chat-section {
     flex-direction: row;
     justify-content: center;
@@ -717,7 +698,7 @@ h3 {
     margin: 0;
   }
 
-  /* 04互助 */
+  /* 04 互助 Desktop (已優化 RWD 排版與彈性寬度) */
   .support-section {
     flex-direction: row;
     justify-content: center;
@@ -727,6 +708,7 @@ h3 {
 
   .support-copy {
     width: 460px;
+    flex-shrink: 0;
   }
 
   .support-section .section-heading {
@@ -740,14 +722,15 @@ h3 {
   }
 
   .support-phones {
-    width: 720px;
-    grid-template-columns: repeat(2, 327px);
-    justify-content: center;
-    gap: 40px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: center;
   }
 
-
-  /* 05星跡 */
+  /* 05 星跡 Desktop */
   .archive-section {
     flex-direction: row;
     justify-content: center;
@@ -780,8 +763,7 @@ h3 {
     margin: 0;
   }
 
-
-  /* Final  */
+  /* Final Desktop */
   .final-section {
     flex-direction: row;
     justify-content: center;
@@ -796,11 +778,15 @@ h3 {
 
   .final-phone {
     width: 421px;
+    margin: 0;
   }
 
-  /* Footer */
+  /* Footer Desktop */
   .footer {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px 12.5%;
+    text-align: left;
   }
 
   .footer h3 {
@@ -816,9 +802,7 @@ h3 {
   }
 }
 
-/* 769px ~ 1249px 02 四支手機放不下時改兩欄
-*/
-
+/* 769px ~ 1249px 階段調整 */
 @media (min-width: 769px) and (max-width: 1249px) {
   .steps {
     grid-template-columns: repeat(2, 250px);
